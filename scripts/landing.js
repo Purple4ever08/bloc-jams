@@ -9,6 +9,7 @@
  }
 
  var animatePoints = function(points) {
+   console.log("We're about to call forEach....");
    forEach(points,revealPoint);
  };
 
