@@ -33,7 +33,6 @@ body.album {
      font-weight: 300;
      font-size: 0.75rem;
  }
-
  .album-view-song-list {
      width: 90%;
      margin: 1.5rem auto;
@@ -81,23 +80,23 @@ body.album {
  .album-song-button span {
      line-height: 28px;
  }
-/* #2 */
+
  @media (max-width: 640px) and (min-width: 320px) {
-    .album-view-details {
-        text-align: center;
-    }
+     .album-view-details {
+         text-align: center;
+     }
 
-    .album-view-title {
-        margin-top: 0;
-    }
-}
+     .album-view-title {
+         margin-top: 0;
+     }
+ }
 
-/* #3 */
-@media (max-width: 1024px) and (min-width: 320px) {
-   .album-view-song-list {
-        position: relative;
-        top: 1rem;
-        width: 80%;
-        margin: auto;
-    }
-}
+ /* #3 */
+ @media (max-width: 1024px) and (min-width: 320px) {
+    .album-view-song-list {
+         position: relative;
+         top: 1rem;
+         width: 80%;
+         margin: auto;
+     }
+ }
