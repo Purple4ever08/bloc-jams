@@ -62,6 +62,23 @@ var createSongRow = function(songNumber, songName, songLength) {
 
  var setCurrentAlbum = function(album) {
 
+   var findParentByClassName = function(element, targetClass) {
+    if (element) {
+        var currentParent = element.parentElement;
+          if (currentParent == null){
+            console.log("No parent found.");
+          }
+          if (currentParent.className !== targetClass){
+            console.log("No parent found with that class name.")
+          }
+
+        while (currentParent.className !== targetClass && currentParent.className !== null) {
+            currentParent = currentParent.parentElement;
+        }
+        return currentParent;
+    }
+};
+
      albumTitle.firstChild.nodeValue = album.title;
      albumArtist.firstChild.nodeValue = album.artist;
      albumReleaseInfo.firstChild.nodeValue = album.year + ' ' + album.label;
